@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Whyte';
+    src: url('fonts/ABC Whyte/ABC Whyte/ABCWhyte-Regular-Trial.woff2') format('woff2'),
+         url('fonts/ABC Whyte/ABC Whyte/ABCWhyte-Regular-Trial.woff') format('woff'),
+         url('fonts/ABC Whyte/ABC Whyte/ABCWhyte-Regular-Trial.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Whyte', sans-serif;
+    color: black;
+    background-color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 6px 10px;
+}
+
+.wrapper {
+    background-color: #ffc700;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 4px solid black;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 0px 100px 0px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#dropdown {
+    color: black;
+    font-size: 14px;
+    background-color: #ffc700;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 10px 10px;
+    max-width: 180px;
+    text-transform: uppercase;
+}
+
+/* hero */
+.hero-images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* gap: 30px; */
+    padding: 0 0 10px 0;
+    overflow: clip;
+}
+
+/* circle */
+#nina {
+    clip-path: ellipse(50% 50% at 50% 50%);
+}
+
+/* hourglass */
+#jose-top {
+    position: relative;
+    clip-path: ellipse(50% 50% at top);
+}
+
+#jose-top::before {
+    content: "";
+    position: absolute;
+    border: 4px solid black;
+    clip-path: ellipse(51% 51% at top);
+    z-index: -1;
+}
+
+#jose-bottom {
+    clip-path: ellipse(50% 50% at bottom);
+    position: absolute;
+    top: 20;
+    left: 20%;
+}
+
+#jose-bottom::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    clip-path: ellipse(60% 60% at bottom);
+    z-index: 1;
+}
+/* octagon */
+#ash {
+    clip-path: polygon(
+        25% 5%, 
+        70% 10%, 
+        100% 50%, 
+        70% 90%, 
+        25% 95%, 
+        0% 50%
+    );
+}
+
+/* triangle? */
+#viscose {
+    clip-path: polygon(
+        50% 0%, /* top point */
+        100% 100%, /*right point  */
+        50% 70%, /* middle point */
+        0 100% /* botom left */
+    );
+}
+
+img {
+    width: 30%;
+}
