@@ -103,7 +103,7 @@ option {
 #jose-bottom {
     clip-path: ellipse(50% 50% at bottom);
     position: absolute;
-    top: 0;
+    top: 17.5%;
     left: 20%;
 }
 
