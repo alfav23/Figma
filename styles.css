@@ -108,13 +108,13 @@ option {
     left: 20%;
 }
 
-#jose-bottom::before {
+/* #jose-bottom::before {
     content: "";
     position: absolute;
     background-color: black;
     clip-path: ellipse(60% 60% at bottom);
     z-index: 1;
-}
+} */
 /* octagon */
 #ash {
     clip-path: polygon(
