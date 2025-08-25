@@ -92,18 +92,19 @@ option {
     clip-path: ellipse(50% 50% at top);
 }
 
-#jose-top::before {
+/* #jose-top::before {
     content: "";
     position: absolute;
     border: 4px solid black;
+    inset: 10px;
     clip-path: ellipse(51% 51% at top);
     z-index: -1;
-}
+} */
 
 #jose-bottom {
     clip-path: ellipse(50% 50% at bottom);
     position: absolute;
-    top: 17.5%;
+    top: 20;
     left: 20%;
 }
 
